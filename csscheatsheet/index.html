@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<?php
+
+$host = 'localhost';
+$user = 'Radbk';
+$password = 'bankshot';
+$dbname =  'bkdb';
+
+
+$dsn = 'mysql:host='. $host .';dbname='.$dbname;
+
+$pdo = new PDO($dsn, $user, $password);
+?>
+<html>
+<head>
+	<title>My Main Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box-1">
+			<h1> Hello World</h1>
+			<p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1>
+			<br/>
+		</div>
+
+		<div class="box-2">
+			<h2> Goodbye World</h2>
+			<p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p2><br>
+			<a class="button" href="#">Read More</a>
+			<br/>
+		</div>
+
+		<div class="categories">
+			<h3>Categories</h3>
+			<ul>
+				<li><a href="./mysite/dBConnect.php">phpMyAdmin</a></li>
+				<li><a href="#">Category2</a></li>
+				<li><a href="#">Category3</a></li>
+				<li><a href="#">Category4</a></li>
+			</ul>
+		</div>
+
+		<form class="myform">
+			<div class="form-group">
+				<label>Name: </label>
+				<input type="text" name="Name">
+			</div>
+			<div class="form-group">
+				<label>Email: </label>
+				<input type="text" name="Email">
+			</div>
+			<div class="form-group">
+				<label>Message: </label>
+				<textarea name="message"></textarea>
+			</div>
+			<input class="button" type="submit" value="Submit" name="">
+		</form>
+
+		<div class="block">
+			<h4>Heading</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+		<div class="block">
+			<h4>Heading</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+		<div class="block">
+			<h4>Heading</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+
+
+			</div><!--container-->
+				
+			</div>
+
+
+
+		</form>
+	</div>
+</body>
+</html>
